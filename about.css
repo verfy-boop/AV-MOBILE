@@ -1,0 +1,47 @@
+/* =============================================================
+   ABOUT.CSS
+   About section – two-column layout with image and text.
+   ============================================================= */
+
+#about {
+  background: var(--brand-mid);
+}
+
+.about-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+/* ── About image ──
+   Replace src in index.html (search PHOTO-ABOUT) to swap this photo.
+   Recommended size: 600×420 px
+────────────────────── */
+.about-img img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 2px solid rgba(168, 85, 247, 0.25);
+}
+
+.about-text p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+  max-width: 100%;
+}
+
+/* ── Responsive: stack on mobile ── */
+@media (max-width: 768px) {
+  .about-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .about-img {
+    order: -1;
+  }
+}

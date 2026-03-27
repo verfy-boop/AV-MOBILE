@@ -1,0 +1,82 @@
+/* =============================================================
+   NAVBAR.CSS
+   Fixed top navigation bar styles.
+   ============================================================= */
+
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem var(--section-px);
+  background: rgba(10, 10, 10, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.nav-logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.08em;
+  color: var(--brand-accent);
+}
+
+.nav-logo span {
+  color: var(--brand-light);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.nav-links a {
+  color: var(--text-muted);
+  transition: color var(--transition);
+}
+
+.nav-links a:hover {
+  color: var(--brand-accent);
+}
+
+.nav-cta {
+  background: var(--brand-accent);
+  color: #fff;
+  padding: 0.5rem 1.3rem;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: opacity var(--transition);
+}
+
+.nav-cta:hover {
+  opacity: 0.85;
+}
+
+/* ── Mobile: stack nav instead of partially breaking ── */
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.25rem;
+    font-size: 0.9rem;
+  }
+
+  .nav-cta {
+    width: 100%;
+    max-width: 240px;
+    text-align: center;
+  }
+}

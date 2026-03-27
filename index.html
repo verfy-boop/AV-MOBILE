@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AV Mobile – Repair & Accessories</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet"/>
+
+  <!--
+    ════════════════════════════════════════════════
+    CSS FILES — load order matters:
+      1. variables  → design tokens (colors, spacing)
+      2. base       → reset + shared/reusable styles
+      3. navbar     → top navigation bar
+      4. hero       → full-screen banner
+      5. services   → services grid cards
+      6. gallery    → photo gallery
+      7. about      → about section
+      8. contact    → contact card + footer
+    ════════════════════════════════════════════════
+  -->
+  <link rel="stylesheet" href="variables.css"/>
+  <link rel="stylesheet" href="base.css"/>
+  <link rel="stylesheet" href="navbar.css"/>
+  <link rel="stylesheet" href="hero.css"/>
+  <link rel="stylesheet" href="services.css"/>
+  <link rel="stylesheet" href="gallery.css"/>
+  <link rel="stylesheet" href="about.css"/>
+  <link rel="stylesheet" href="contact.css"/>
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════════
+       NAVBAR
+  ════════════════════════════════════════════ -->
+  <nav aria-label="Main navigation">
+    <div class="nav-logo">AV <span>MOBILE</span></div>
+
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <a href="#contact" class="nav-cta">Get Repair Quote</a>
+  </nav>
+
+
+  <!-- ════════════════════════════════════════════
+       HERO
+  ════════════════════════════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-badge">📍 Your Local Mobile Experts</div>
+
+      <h1>Fix It Fast.<br><span>Look Great.</span></h1>
+
+      <p>Professional mobile phone repairs &amp; premium accessories — all under one roof at AV Mobile.</p>
+
+      <div class="hero-buttons">
+        <a href="#services" class="btn-primary">Our Services</a>
+        <a href="#contact"  class="btn-outline">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════
+       SERVICES
+  ════════════════════════════════════════════ -->
+  <section id="services">
+    <p class="section-label">What We Do</p>
+    <h2 class="section-title">Services We Offer</h2>
+    <p class="section-sub">From cracked screens to battery swaps, we handle every repair with care and speed.</p>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-icon">📱</div>
+        <h3>Screen Replacement</h3>
+        <p>Cracked or shattered display? We replace screens for all major brands — same day service available.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🔋</div>
+        <h3>Battery Replacement</h3>
+        <p>Battery draining too fast? We install genuine batteries to restore your phone's full performance.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">💧</div>
+        <h3>Water Damage Repair</h3>
+        <p>Dropped in water? Bring it in immediately — our technicians act fast to save your device.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🎧</div>
+        <h3>Accessories Shop</h3>
+        <p>Cases, screen protectors, chargers, earphones &amp; more — top brands at competitive prices.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🔧</div>
+        <h3>Hardware Fixes</h3>
+        <p>Broken buttons, charging port issues, camera faults — we diagnose and fix all hardware problems.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">💾</div>
+        <h3>Data Recovery</h3>
+        <p>Lost your photos or contacts? We offer professional data recovery for most Android and iOS devices.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════
+       GALLERY
+
+       HOW TO CHANGE PICTURES:
+       1. Find an <img> tag below (labelled PHOTO-1 to PHOTO-5)
+       2. Replace its src="..." with your file or URL
+          Local file → src="images/shop.jpg"
+          Web URL    → src="https://example.com/photo.jpg"
+       3. Save and refresh your browser.
+  ════════════════════════════════════════════ -->
+  <section id="gallery">
+    <p class="section-label">Our Shop</p>
+    <h2 class="section-title">See Us In Action</h2>
+    <p class="section-sub">A glimpse inside AV Mobile — where repairs happen and quality accessories live.</p>
+
+    <div class="gallery-grid">
+
+      <!-- PHOTO-1 · Wide feature image · recommended: 900×320 px -->
+      <div class="gallery-item">
+        <img src="https://placehold.co/900x320/1a2235/a855f7?text=PHOTO-1+Shop+Front"
+             alt="AV Mobile shop front"/>
+        <div class="gallery-caption">Our Shop – AV Mobile</div>
+      </div>
+
+      <!-- PHOTO-2 · recommended: 420×260 px -->
+      <div class="gallery-item">
+        <img src="https://placehold.co/420x260/1a2235/a855f7?text=PHOTO-2+Repair+Work" loading="lazy"
+             alt="Technician repairing a phone"/>
+        <div class="gallery-caption">Expert Repair Work</div>
+      </div>
+
+      <!-- PHOTO-3 · recommended: 420×260 px -->
+      <div class="gallery-item">
+        <img src="https://placehold.co/420x260/1a2235/a855f7?text=PHOTO-3+Accessories" loading="lazy"
+             alt="Accessories display"/>
+        <div class="gallery-caption">Accessories Collection</div>
+      </div>
+
+      <!-- PHOTO-4 · recommended: 420×260 px -->
+      <div class="gallery-item">
+        <img src="https://placehold.co/420x260/1a2235/a855f7?text=PHOTO-4+Screen+Fix" loading="lazy"
+             alt="Screen replacement process"/>
+        <div class="gallery-caption">Screen Replacement</div>
+      </div>
+
+      <!-- PHOTO-5 · recommended: 420×260 px -->
+      <div class="gallery-item">
+        <img src="https://placehold.co/420x260/1a2235/a855f7?text=PHOTO-5+Lab" loading="lazy"
+             alt="Inside the repair lab"/>
+        <div class="gallery-caption">Inside Our Lab</div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════
+       ABOUT
+
+       PHOTO-ABOUT · recommended: 600×420 px
+       Replace the src below the same way as gallery photos.
+  ════════════════════════════════════════════ -->
+  <section id="about">
+    <p class="section-label">Who We Are</p>
+    <h2 class="section-title">About AV Mobile</h2>
+
+    <div class="about-wrapper">
+
+      <div class="about-img">
+        <!-- PHOTO-ABOUT · recommended: 600×420 px -->
+        <img src="https://placehold.co/600x420/1a2235/a855f7?text=PHOTO-ABOUT+Team" loading="lazy"
+             alt="AV Mobile team"/>
+      </div>
+
+      <div class="about-text">
+        <p>
+          AV Mobile was founded with a simple goal — give every customer fast, honest,
+          and affordable mobile repair alongside a great selection of accessories.
+          We believe your phone is essential, and getting it fixed shouldn't be a hassle.
+        </p>
+        <p>
+          Our certified technicians use quality parts and follow precise procedures to
+          ensure every repaired device leaves our shop working like new. Whether it's a
+          quick screen fix or a complex motherboard repair, we've got you covered.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════
+       CONTACT
+
+       Change address, phone, hours and email below.
+       Update the WhatsApp link with your real number.
+  ════════════════════════════════════════════ -->
+  <section id="contact">
+    <p class="section-label">Get In Touch</p>
+    <h2 class="section-title">Find Us / Contact Us</h2>
+
+    <div class="contact-card">
+      <h3>Visit AV Mobile Today</h3>
+      <p>Walk in or call ahead — we're ready to help with your repair or accessory needs.</p>
+
+      <div class="contact-details">
+
+        <div class="contact-item">
+          <span class="icon">📍</span>
+          <span>123 Main Street, Your City</span>   <!-- ← your address -->
+        </div>
+
+        <div class="contact-item">
+          <span class="icon">📞</span>
+          <span>+94 76 377 2965</span>              <!-- ← your phone -->
+        </div>
+
+        <div class="contact-item">
+          <span class="icon">🕐</span>
+          <span>Mon – Sat : 9 AM – 7 PM</span>      <!-- ← opening hours -->
+        </div>
+
+        <div class="contact-item">
+          <span class="icon">✉️</span>
+          <span>info@avmobile.lk</span>             <!-- ← your email -->
+        </div>
+
+      </div>
+
+      <!-- ← Update 94770000000 with your WhatsApp number (no + or spaces) -->
+      <a href="https://wa.me/94763772965" class="btn-primary" target="_blank" rel="noreferrer">
+        💬 WhatsApp Us
+      </a>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════ -->
+  <footer>
+    <p>© 2025 <span>AV Mobile</span>. All rights reserved. | Mobile Repair &amp; Accessories</p>
+  </footer>
+
+</body>
+</html>

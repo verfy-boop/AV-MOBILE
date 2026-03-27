@@ -1,0 +1,22 @@
+/* =============================================================
+   VARIABLES.CSS
+   All design tokens live here.
+   Change colors, fonts, spacing in ONE place — affects everything.
+   ============================================================= */
+
+:root {
+  /* Brand Colors */
+  --brand-dark:   #0a0a0a;
+  --brand-mid:    #111827;
+  --brand-accent: #a855f7;   /* ← Change accent color here */
+  --brand-light:  #f5f5f5;
+  --text-muted:   #9ca3af;
+  --card-bg:      #1a2235;
+
+  /* Layout */
+  --radius:     12px;
+  --section-px: 5%;
+
+  /* Animation */
+  --transition: 0.3s ease;
+}
